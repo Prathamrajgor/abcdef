@@ -18,7 +18,7 @@ receiver_email = "prathamrajgor@gmail.com"
 smtp_server = "smtp.gmail.com"
 port = 587
 sender_email = "prathamrajgor@gmail.com"
-password = "rbhwkxtjgsprcapm"
+password = ""
 receiver_email = "prathamrajgor@gmail.com"
 
 # Function to send email with captured screenshot
