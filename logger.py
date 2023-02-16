@@ -11,7 +11,7 @@ from email.mime.image import MIMEImage
 smtp_server = "smtp.gmail.com"
 port = 587
 sender_email = "prathamrajgor@gmail.com"
-password = "rbhwkxtjgsprcapm"
+password = ""
 receiver_email = "prathamrajgor@gmail.com"
 
 # Set up SMTP server and email addresses
