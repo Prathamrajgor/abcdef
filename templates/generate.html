@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-10">
+      <h1 class="text-3xl font-bold mb-5">Generate a Strong Password</h1>
+      <form action="/result" method="post" class="max-w-lg mx-auto">
+        <div class="mb-4">
+          <label class="block font-bold mb-2" for="length">
+            Length
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="length" type="number" name="length" value="12" min="6" max="64">
+        </div>
+        <div class="mb-4">
+          <label class="block font-bold mb-2">
+            Complexity
+          </label>
+          <div class="flex items-center">
+            <input class="mr-2 leading-tight" type="checkbox" name="upper" id="upper">
+            <label class="font-bold" for="upper">
+              Uppercase
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input class="mr-2 leading-tight" type="checkbox" name="lower" id="lower">
+            <label class="font-bold" for="lower">
+              Lowercase
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input class="mr-2 leading-tight" type="checkbox" name="number" id="number">
+            <label class="font-bold" for="number">
+              Numbers
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input class="mr-2 leading-tight" type="checkbox" name="symbol" id="symbol">
+            <label class="font-bold" for="symbol">
+              Symbols
+            </label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block font-bold mb-2">
+            Avoidance
+          </label>
+          <div class="flex items-center">
+            <input class="mr-2 leading-tight" type="checkbox" name="common" id="common">
+            <label class="font-bold" for="common">
+              Common Words
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input class="mr-2 leading-tight" type="checkbox" name="personal" id="personal">
+            <label class="font-bold" for="personal">
+              Personal Information
+            </label>
+          </div>
+        </div>
+        <div class="mb-4">
+            <label class="block font-bold mb-2" for="easy">
+              Easy to Remember
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="easy" type="text" name="easy" placeholder="Enter a series of words...">
+          </div>
+          <div class="mb-4">
+            <label class="block font-bold mb-2" for="entropy">
+              Minimum Entropy
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="entropy" type="number" name="entropy" value="50" min="0" max="128">
+          </div>
+          <div class="flex justify-center">
+            <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">
+            </a>
+          </div>
+        </form>
+      </div>
+    </body>
+  </html>
